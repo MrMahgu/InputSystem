@@ -2414,7 +2414,8 @@ namespace UnityEngine.InputSystem
             {
                 // When running in background is enabled for the application, we only reset devices that aren't
                 // marked as canRunInBackground.
-                var runInBackground = m_Runtime.runInBackground;
+                //var runInBackground = m_Runtime.runInBackground;
+                var runInBackground = true; // not a single fuck is going to given -- right this way sir
 
                 // Find the size of the largest state block. This determines the amount of temporary memory we
                 // need to allocate.
