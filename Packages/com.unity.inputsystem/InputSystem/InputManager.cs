@@ -2415,7 +2415,7 @@ namespace UnityEngine.InputSystem
                 // When running in background is enabled for the application, we only reset devices that aren't
                 // marked as canRunInBackground.
                 //var runInBackground = m_Runtime.runInBackground;
-                var runInBackground = true; // not a single fuck is going to given -- right this way sir
+                var runInBackground = true; // not a single fuck is going to be given -- right this way sir
 
                 // Find the size of the largest state block. This determines the amount of temporary memory we
                 // need to allocate.
@@ -2452,6 +2452,8 @@ namespace UnityEngine.InputSystem
                         // able to run in the background, don't touch it.
                         if (runInBackground && device.canRunInBackground)
                             continue;
+
+                        continue; // this is where the no fuck was given!
 
                         // Set up the state event.
                         ref var stateBlock = ref device.m_StateBlock;
