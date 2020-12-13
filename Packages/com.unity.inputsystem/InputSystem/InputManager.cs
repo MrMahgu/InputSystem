@@ -2410,6 +2410,8 @@ namespace UnityEngine.InputSystem
             ////REVIEW: should we also flush the event queue on focus loss?
 
             // On focus loss, reset devices.
+            m_HasFocus = focus;
+            return;
             if (!focus)
             {
                 // When running in background is enabled for the application, we only reset devices that aren't
